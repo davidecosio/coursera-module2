@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: white;
+}
+
+header {
+	background: #607D8B;
+	margin-bottom: 15px;
+}
+
+header > h1, footer > h1 {
+	padding: 75px 0;
+	text-align: center;
+	font-size: 1.75em;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#wrapper::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.box {
+	border: 1px solid #78909C;
+	float: left;
+	width: 32%;
+}
+
+.titleregion {
+	position: relative;
+	width: 100%;
+	height: 50px;	
+}
+
+.box h2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	font-size: 1.25em;
+	width: 150px;
+	padding: 15px 0px;
+} 
+
+.box article {
+	padding: 20px 12px;
+	margin-top: 10px;
+}
+
+.chicken {
+	background: #26A69A;
+}
+
+.chicken h2 {
+	background: #00695C;
+}
+
+.beef {
+	background: #26C6DA;
+	margin-left: 2%;
+}
+
+.beef h2 {
+	background: #00838F;
+}
+
+.sushi {
+	background: #D4E157;
+	margin-left: 2%;
+}
+
+.sushi h2 {
+	background: #9E9D24;
+}
+
+footer {
+	clear: both;
+	margin-top: 15px;
+	background: #607D8B;
+	text-align: center;
+	width: 100%;
+}
+
+@media (max-width: 960px) {
+
+	#wrapper {
+		width: 94%;
+	}
+
+
+@media (max-width: 768px) {
+
+	#wrapper {
+		width: 94%;
+	}
+
+	.chicken {
+		float: left;
+		width: 49%;
+	}
+
+	.beef {
+		float: left;
+		width: 49%;
+		margin-left: 2%;
+		margin-bottom: 2%;
+	}
+
+	.sushi{
+		float: none;
+		clear: both;
+		width: auto;
+		margin: 0px;
+	}
+}
+
+
+@media (max-width: 500px) {
+
+	#wrapper {
+		width: auto;
+	}
+
+	.chicken {
+		float: none;
+		width: auto;
+		margin-bottom: 2%;
+	}
+
+	.beef {
+		float: none;
+		width: auto;
+		margin: 0px;
+		margin-bottom: 2%;
+	}
+
+	.sushi{
+		float: none;
+		clear: both;
+		width: auto;
+		margin: 0px;
+	}
+}
